@@ -32,7 +32,7 @@ const create_article = (result)=>{
     for(joke of result){
         console.log(joke.value)
         const article = document.createElement('article')
-        article.className = "col-sm-3 col-12 flex-grow-1 rounded-2"
+        article.className = "col-sm col-12 rounded-2"
         article.style = `background: ${randomBackground()};`
         article.innerHTML = `<p>${joke.value}</p>`
         document.querySelector('.jokes-list').appendChild(article)
